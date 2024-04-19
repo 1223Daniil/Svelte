@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import "../../app.css";
+  import { goto } from "$app/navigation";
 
   let email = "";
   let password = "";
@@ -15,7 +16,7 @@
     );
     console.log(users);
     if (user) {
-      alert("Авторизация успешна!");
+      goto("/main");
       // Очищаем поля формы
       email = "";
       password = "";
