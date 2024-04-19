@@ -1,0 +1,9 @@
+{
+	"/": [
+		"src/routes/+page.js"
+	],
+	"/login": [],
+	"/main": [
+		"src/routes/main/+page.js"
+	]
+}

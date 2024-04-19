@@ -6,7 +6,7 @@
   import "../app.css";
   // Создаем хранилище для списка пользователей
   const usersStore = writable([]);
-  let lengthUsers = JSON.parse(sessionStorage.getItem("users")).length;
+
   // Подписываемся на изменения списка пользователей и сохраняем их в sessionStorage (только в браузере)
 
   usersStore.subscribe((value) => {
